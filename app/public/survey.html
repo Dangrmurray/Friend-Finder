@@ -229,7 +229,6 @@
                         //getting best match data from backend, and passing the data to the modal
                         $.get("/bestFriend", function (data2) {
                             $('#myModal').modal('toggle');
-                            $('#myModal').modal('show');
                             $('#modalName').text(data2.friend.name);
                             $('#modalImage').attr("src", data2.friend.photo);
                         });	
