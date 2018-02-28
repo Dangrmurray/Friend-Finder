@@ -13,6 +13,7 @@ module.exports = function(app){
 	app.get("/bestFriend", function (req,res) {
 		let bestFriend = server.lookForFriends();
 		res.json(bestFriend);
+		
 
 	});
 
